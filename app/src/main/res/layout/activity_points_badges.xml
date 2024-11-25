@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2F1C54"
+        tools:context=".PointsBadges">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/pointsCardView"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="349dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2"
+            app:neumorph_shadowColorDark="#1C132E"
+            app:neumorph_shadowColorLight="#766E89"
+            app:neumorph_shadowElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E4EBF5"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E4EBF5">
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBarPoints"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="238dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="8dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressTint="#7BB9C3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.496"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewPoints" />
+
+                    <TextView
+                        android:id="@+id/textViewPoints"
+                        android:layout_width="184dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/black_ops_one"
+                        android:textAlignment="center"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.496"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/btnCardio"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="375dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pointsCardView"
+            app:neumorph_shadowColorDark="#1C132E"
+            app:neumorph_shadowColorLight="#766E89"
+            app:neumorph_shadowElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:background="#E4EBF5"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#E4EBF5">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/appCompatImageViewBadge1"
+                        android:layout_width="77dp"
+                        android:layout_height="68dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/appCompatImageViewBadge3"
+                        android:layout_width="77dp"
+                        android:layout_height="68dp"
+                        android:layout_marginEnd="24dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageViewBadge2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/appCompatImageViewBadge2"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/appCompatImageViewBadge2"
+                        android:layout_width="77dp"
+                        android:layout_height="68dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageViewBadge1"
+                        app:layout_constraintEnd_toStartOf="@+id/appCompatImageViewBadge3"
+                        app:layout_constraintTop_toTopOf="@+id/appCompatImageViewBadge1"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:layout_width="184dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/black_ops_one"
+                        android:text="List of Badges"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/appCompatImageViewBadge2" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="183dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/emofitdark" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView2"
+            style="@style/ShapeAppearance.Neumorph.CardView"
+            android:layout_width="274dp"
+            android:layout_height="93dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:neumorph_backgroundColor="#000000"
+            app:neumorph_shadowColorDark="#1C132E"
+            app:neumorph_shadowColorLight="#766E89"
+            app:neumorph_shadowElevation="3dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="254dp"
+                android:layout_height="72dp"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="12dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="225dp"
+                    android:layout_height="66dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/black_ops_one"
+                    android:text="Points and Badges"
+                    android:textAlignment="center"
+                    android:textColor="#7BB9C3"
+                    android:textSize="23sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.448"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <FrameLayout
+            android:layout_width="410dp"
+            android:layout_height="81dp"
+            android:background="#E4EBF5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <soup.neumorphism.NeumorphCardView
+                    android:id="@+id/neumorphCardView5"
+                    android:layout_width="461dp"
+                    android:layout_height="83dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:neumorph_shadowElevation="6dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="444dp"
+                        android:layout_height="83dp">
+
+
+                        <soup.neumorphism.NeumorphButton
+                            android:id="@+id/btnBackToDashboard"
+                            style="@style/Widget.Neumorph.Button"
+                            android:layout_width="178dp"
+                            android:layout_height="60dp"
+                            android:fontFamily="@font/black_ops_one"
+                            android:text="B a c k"
+                            android:textAllCaps="false"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:neumorph_backgroundColor="#7BB9C3"
+                            app:neumorph_shadowColorDark="#3A595D"
+                            app:neumorph_shadowElevation="3dp"
+                            app:neumorph_strokeColor="#0B0808"
+                            app:neumorph_strokeWidth="2dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </soup.neumorphism.NeumorphCardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/thankYouMessage"
+            android:layout_width="281dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/black_ops_one"
+            android:text="Thank you for using EmoFit! You have earned all the 3 badges in this app! 🎉 Made with love by Ayzoru~"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCardio" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
